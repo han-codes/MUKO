@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Chill Zone
+//  StudyWithMe
 //
-//  Created by Hannie Kim on 4/12/20.
+//  Created by Hannie Kim on 4/30/20.
 //  Copyright © 2020 Hannie Kim. All rights reserved.
 //
 
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "Chill_Zone")
+        let container = NSPersistentContainer(name: "StudyWithMe")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

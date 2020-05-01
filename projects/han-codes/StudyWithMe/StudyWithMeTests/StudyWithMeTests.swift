@@ -1,15 +1,15 @@
 //
-//  Chill_ZoneTests.swift
-//  Chill ZoneTests
+//  StudyWithMeTests.swift
+//  StudyWithMeTests
 //
-//  Created by Hannie Kim on 4/12/20.
+//  Created by Hannie Kim on 4/30/20.
 //  Copyright © 2020 Hannie Kim. All rights reserved.
 //
 
 import XCTest
-@testable import Chill_Zone
+@testable import StudyWithMe
 
-class Chill_ZoneTests: XCTestCase {
+class StudyWithMeTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

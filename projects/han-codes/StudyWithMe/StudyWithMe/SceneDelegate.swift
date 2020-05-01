@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Chill Zone
+//  StudyWithMe
 //
-//  Created by Hannie Kim on 4/12/20.
+//  Created by Hannie Kim on 4/30/20.
 //  Copyright © 2020 Hannie Kim. All rights reserved.
 //
 

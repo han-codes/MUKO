@@ -1,14 +1,14 @@
 //
-//  Chill_ZoneUITests.swift
-//  Chill ZoneUITests
+//  StudyWithMeUITests.swift
+//  StudyWithMeUITests
 //
-//  Created by Hannie Kim on 4/12/20.
+//  Created by Hannie Kim on 4/30/20.
 //  Copyright © 2020 Hannie Kim. All rights reserved.
 //
 
 import XCTest
 
-class Chill_ZoneUITests: XCTestCase {
+class StudyWithMeUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
