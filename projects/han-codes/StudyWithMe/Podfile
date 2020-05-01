@@ -10,6 +10,7 @@ target 'StudyWithMe' do
   pod 'Reusable'
   pod 'SwiftyAttributes'
   pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
 
   target 'StudyWithMeTests' do
     inherit! :search_paths
