@@ -12,7 +12,6 @@
 		78AA7CF52A2DE966C6BBD965 /* Pods_StudyWithMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9BB0975DD9DA088291219 /* Pods_StudyWithMe.framework */; };
 		F32AF915245BB61A00812F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32AF914245BB61A00812F42 /* AppDelegate.swift */; };
 		F32AF917245BB61A00812F42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32AF916245BB61A00812F42 /* SceneDelegate.swift */; };
-		F32AF919245BB61A00812F42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32AF918245BB61A00812F42 /* ViewController.swift */; };
 		F32AF91F245BB61A00812F42 /* StudyWithMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F32AF91D245BB61A00812F42 /* StudyWithMe.xcdatamodeld */; };
 		F32AF921245BB61C00812F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32AF920245BB61C00812F42 /* Assets.xcassets */; };
 		F32AF924245BB61C00812F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32AF922245BB61C00812F42 /* LaunchScreen.storyboard */; };
@@ -57,7 +56,6 @@
 		F32AF911245BB61A00812F42 /* StudyWithMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyWithMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32AF914245BB61A00812F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32AF916245BB61A00812F42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F32AF918245BB61A00812F42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F32AF91E245BB61A00812F42 /* StudyWithMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudyWithMe.xcdatamodel; sourceTree = "<group>"; };
 		F32AF920245BB61C00812F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F32AF923245BB61C00812F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -213,9 +211,7 @@
 		F32AF94B245BB71100812F42 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F32AF918245BB61A00812F42 /* ViewController.swift */,
-				F3DD6845247783480063D48C /* AuthenticationContainerViewController.swift */,
-				F3DD6846247783480063D48C /* AuthenticationContainerViewController.xib */,
+				F3DD684B2477872A0063D48C /* Authentication Container */,
 				F3DD6849247784680063D48C /* BaseViewController.swift */,
 			);
 			path = "View Controllers";
@@ -262,6 +258,15 @@
 				F3DD68432477828C0063D48C /* GlobalTypeAlias.swift */,
 			);
 			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		F3DD684B2477872A0063D48C /* Authentication Container */ = {
+			isa = PBXGroup;
+			children = (
+				F3DD6845247783480063D48C /* AuthenticationContainerViewController.swift */,
+				F3DD6846247783480063D48C /* AuthenticationContainerViewController.xib */,
+			);
+			path = "Authentication Container";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,7 +512,6 @@
 				F3DD6841247781C80063D48C /* UIAlertController+Convenience.swift in Sources */,
 				F3DD683E247781440063D48C /* Constants+Alert.swift in Sources */,
 				F3DD683C247781350063D48C /* Constants.swift in Sources */,
-				F32AF919245BB61A00812F42 /* ViewController.swift in Sources */,
 				F3DD6847247783480063D48C /* AuthenticationContainerViewController.swift in Sources */,
 				F3DD684A247784680063D48C /* BaseViewController.swift in Sources */,
 				F32AF915245BB61A00812F42 /* AppDelegate.swift in Sources */,

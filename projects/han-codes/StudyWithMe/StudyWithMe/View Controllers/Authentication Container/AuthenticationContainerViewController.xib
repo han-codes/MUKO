@@ -175,6 +175,6 @@
         </view>
     </objects>
     <resources>
-        <image name="iceCubeLogo" width="128" height="128"/>
+        <image name="iceCubeLogo" width="100" height="100"/>
     </resources>
 </document>

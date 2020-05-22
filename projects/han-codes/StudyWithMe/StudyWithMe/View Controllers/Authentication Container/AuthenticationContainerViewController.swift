@@ -24,6 +24,5 @@ class AuthenticationContainerViewController: BaseViewController {
         
         super.viewDidLoad()
         
-        
     }
 }
