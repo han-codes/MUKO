@@ -18,6 +18,8 @@
 		F32AF92F245BB61C00812F42 /* StudyWithMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32AF92E245BB61C00812F42 /* StudyWithMeTests.swift */; };
 		F32AF93A245BB61C00812F42 /* StudyWithMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32AF939245BB61C00812F42 /* StudyWithMeUITests.swift */; };
 		F32AF94F245BBFF800812F42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F32AF94E245BBFF800812F42 /* GoogleService-Info.plist */; };
+		F3D03E8924782A8B00DE91BD /* UserDefaults+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D03E8824782A8B00DE91BD /* UserDefaults+Convenience.swift */; };
+		F3D03E8B24782AEC00DE91BD /* Constants+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D03E8A24782AEC00DE91BD /* Constants+UserDefaults.swift */; };
 		F3DD683C247781350063D48C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD683B247781350063D48C /* Constants.swift */; };
 		F3DD683E247781440063D48C /* Constants+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD683D247781440063D48C /* Constants+Alert.swift */; };
 		F3DD6841247781C80063D48C /* UIAlertController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD6840247781C80063D48C /* UIAlertController+Convenience.swift */; };
@@ -25,6 +27,7 @@
 		F3DD6847247783480063D48C /* AuthenticationContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD6845247783480063D48C /* AuthenticationContainerViewController.swift */; };
 		F3DD6848247783480063D48C /* AuthenticationContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3DD6846247783480063D48C /* AuthenticationContainerViewController.xib */; };
 		F3DD684A247784680063D48C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD6849247784680063D48C /* BaseViewController.swift */; };
+		F3F34CC2247879AC009939DB /* Constants+Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F34CC1247879AC009939DB /* Constants+Authentication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,8 @@
 		F32AF939245BB61C00812F42 /* StudyWithMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyWithMeUITests.swift; sourceTree = "<group>"; };
 		F32AF93B245BB61C00812F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F32AF94E245BBFF800812F42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3D03E8824782A8B00DE91BD /* UserDefaults+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Convenience.swift"; sourceTree = "<group>"; };
+		F3D03E8A24782AEC00DE91BD /* Constants+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+UserDefaults.swift"; sourceTree = "<group>"; };
 		F3DD683B247781350063D48C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F3DD683D247781440063D48C /* Constants+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Alert.swift"; sourceTree = "<group>"; };
 		F3DD6840247781C80063D48C /* UIAlertController+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Convenience.swift"; sourceTree = "<group>"; };
@@ -74,6 +79,7 @@
 		F3DD6845247783480063D48C /* AuthenticationContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContainerViewController.swift; sourceTree = "<group>"; };
 		F3DD6846247783480063D48C /* AuthenticationContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationContainerViewController.xib; sourceTree = "<group>"; };
 		F3DD6849247784680063D48C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F3F34CC1247879AC009939DB /* Constants+Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Authentication.swift"; sourceTree = "<group>"; };
 		FAC9BB0975DD9DA088291219 /* Pods_StudyWithMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyWithMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,6 +199,7 @@
 		F32AF948245BB6F900812F42 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				F3D03E8724782A7700DE91BD /* User Defaults */,
 				F3DD683A2477812C0063D48C /* Constants */,
 				F3DD683F247781BA0063D48C /* Extensions */,
 				F3DD68422477827C0063D48C /* Miscellaneous */,
@@ -233,6 +240,16 @@
 				F32AF922245BB61C00812F42 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F3D03E8724782A7700DE91BD /* User Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				F3D03E8824782A8B00DE91BD /* UserDefaults+Convenience.swift */,
+				F3D03E8A24782AEC00DE91BD /* Constants+UserDefaults.swift */,
+				F3F34CC1247879AC009939DB /* Constants+Authentication.swift */,
+			);
+			path = "User Defaults";
 			sourceTree = "<group>";
 		};
 		F3DD683A2477812C0063D48C /* Constants */ = {
@@ -509,6 +526,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D03E8B24782AEC00DE91BD /* Constants+UserDefaults.swift in Sources */,
+				F3F34CC2247879AC009939DB /* Constants+Authentication.swift in Sources */,
 				F3DD6841247781C80063D48C /* UIAlertController+Convenience.swift in Sources */,
 				F3DD683E247781440063D48C /* Constants+Alert.swift in Sources */,
 				F3DD683C247781350063D48C /* Constants.swift in Sources */,
@@ -517,6 +536,7 @@
 				F32AF915245BB61A00812F42 /* AppDelegate.swift in Sources */,
 				F3DD68442477828C0063D48C /* GlobalTypeAlias.swift in Sources */,
 				F32AF917245BB61A00812F42 /* SceneDelegate.swift in Sources */,
+				F3D03E8924782A8B00DE91BD /* UserDefaults+Convenience.swift in Sources */,
 				F32AF91F245BB61A00812F42 /* StudyWithMe.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
