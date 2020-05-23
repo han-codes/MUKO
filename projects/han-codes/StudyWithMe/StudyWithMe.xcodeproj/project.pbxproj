@@ -28,6 +28,9 @@
 		F3DD6848247783480063D48C /* AuthenticationContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3DD6846247783480063D48C /* AuthenticationContainerViewController.xib */; };
 		F3DD684A247784680063D48C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD6849247784680063D48C /* BaseViewController.swift */; };
 		F3F34CC2247879AC009939DB /* Constants+Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F34CC1247879AC009939DB /* Constants+Authentication.swift */; };
+		F3F34CC624787FC2009939DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F34CC424787FC2009939DB /* LoginViewController.swift */; };
+		F3F34CC724787FC2009939DB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3F34CC524787FC2009939DB /* LoginViewController.xib */; };
+		F3F34CC9247880B5009939DB /* BaseXibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F34CC8247880B5009939DB /* BaseXibViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		F3DD6846247783480063D48C /* AuthenticationContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationContainerViewController.xib; sourceTree = "<group>"; };
 		F3DD6849247784680063D48C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F3F34CC1247879AC009939DB /* Constants+Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Authentication.swift"; sourceTree = "<group>"; };
+		F3F34CC424787FC2009939DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F3F34CC524787FC2009939DB /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F3F34CC8247880B5009939DB /* BaseXibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXibViewController.swift; sourceTree = "<group>"; };
 		FAC9BB0975DD9DA088291219 /* Pods_StudyWithMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyWithMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -218,8 +224,10 @@
 		F32AF94B245BB71100812F42 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F3F34CC324787F85009939DB /* Login */,
 				F3DD684B2477872A0063D48C /* Authentication Container */,
 				F3DD6849247784680063D48C /* BaseViewController.swift */,
+				F3F34CC8247880B5009939DB /* BaseXibViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -284,6 +292,15 @@
 				F3DD6846247783480063D48C /* AuthenticationContainerViewController.xib */,
 			);
 			path = "Authentication Container";
+			sourceTree = "<group>";
+		};
+		F3F34CC324787F85009939DB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F3F34CC424787FC2009939DB /* LoginViewController.swift */,
+				F3F34CC524787FC2009939DB /* LoginViewController.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F34CC724787FC2009939DB /* LoginViewController.xib in Resources */,
 				F3DD6848247783480063D48C /* AuthenticationContainerViewController.xib in Resources */,
 				F32AF924245BB61C00812F42 /* LaunchScreen.storyboard in Resources */,
 				F32AF94F245BBFF800812F42 /* GoogleService-Info.plist in Resources */,
@@ -537,7 +555,9 @@
 				F3DD68442477828C0063D48C /* GlobalTypeAlias.swift in Sources */,
 				F32AF917245BB61A00812F42 /* SceneDelegate.swift in Sources */,
 				F3D03E8924782A8B00DE91BD /* UserDefaults+Convenience.swift in Sources */,
+				F3F34CC624787FC2009939DB /* LoginViewController.swift in Sources */,
 				F32AF91F245BB61A00812F42 /* StudyWithMe.xcdatamodeld in Sources */,
+				F3F34CC9247880B5009939DB /* BaseXibViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

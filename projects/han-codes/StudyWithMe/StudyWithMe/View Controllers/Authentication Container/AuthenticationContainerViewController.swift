@@ -19,7 +19,7 @@ protocol AuthenticationButtonDelegate: class {
     func authenticationButtonPressed()
 }
 
-class AuthenticationContainerViewController: BaseViewController {
+class AuthenticationContainerViewController: BaseViewController, LogInDelegate {
     
     // MARK: - Auth State
     
@@ -68,7 +68,7 @@ class AuthenticationContainerViewController: BaseViewController {
         
         super.viewDidLoad()
                         
-        registerKeyboardNotifications()        
+        registerKeyboardNotifications()
         load(state: currentState)
     }
     
@@ -89,7 +89,7 @@ class AuthenticationContainerViewController: BaseViewController {
     
     private func loadLogin() {
         // TODO: - Login Screen Setup
-        presentNotYetImplementedAlert()
+        transition(to: LoginViewController(authenticationContainerViewController: self))
     }
     
     private func loadSignUp() {
@@ -122,6 +122,15 @@ class AuthenticationContainerViewController: BaseViewController {
         case .signUp:
             submitButton.setTitle(Constants.Authentication.Registration.submitButtonText, for: .normal)
         }
+    }
+    
+    // MARK: - LogInDelegate Callback
+    
+    func loggedIn() {
+        
+        // TODO: Save user that has logged in to keychain
+        // Display next screen
+        presentNotYetImplementedAlert()
     }
 }
 

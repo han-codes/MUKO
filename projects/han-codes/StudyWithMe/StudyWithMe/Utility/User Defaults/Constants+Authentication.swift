@@ -13,6 +13,11 @@ extension Constants {
         struct Login {
             
             static let submitButtonText = "Log In"
+            
+            struct Error {
+                
+                static let invalidCredsText = "The email and/or password you have entered is invalid."
+            }
         }
         
         struct Registration {
