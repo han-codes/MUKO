@@ -9,6 +9,7 @@ target 'StudyWithMe' do
   pod 'PureLayout'
   pod 'Reusable'
   pod 'SwiftyAttributes'
+  pod 'KeychainAccess'
   
   #Firebase
   pod 'Firebase/Analytics'

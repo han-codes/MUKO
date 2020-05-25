@@ -10,6 +10,7 @@
 		23DC5E3F718CA306EDFFBA49 /* Pods_StudyWithMe_StudyWithMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1851A0A602E9062229D7D2B /* Pods_StudyWithMe_StudyWithMeUITests.framework */; };
 		2C545F34C2E96DF5EADF3452 /* Pods_StudyWithMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029F4390AF133F116B2CDE03 /* Pods_StudyWithMeTests.framework */; };
 		78AA7CF52A2DE966C6BBD965 /* Pods_StudyWithMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9BB0975DD9DA088291219 /* Pods_StudyWithMe.framework */; };
+		F3042F57247C4B3A0008DB63 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3042F56247C4B3A0008DB63 /* UserSessionManager.swift */; };
 		F3193933247B5CDF003AD85A /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3193931247B5CDF003AD85A /* RegistrationViewController.swift */; };
 		F3193934247B5CE0003AD85A /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3193932247B5CDF003AD85A /* RegistrationViewController.xib */; };
 		F32AF915245BB61A00812F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32AF914245BB61A00812F42 /* AppDelegate.swift */; };
@@ -61,6 +62,7 @@
 		C426A02F58F58C56DEACEB35 /* Pods-StudyWithMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyWithMeTests.debug.xcconfig"; path = "Target Support Files/Pods-StudyWithMeTests/Pods-StudyWithMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF85A02F818B395846F58738 /* Pods-StudyWithMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyWithMeTests.release.xcconfig"; path = "Target Support Files/Pods-StudyWithMeTests/Pods-StudyWithMeTests.release.xcconfig"; sourceTree = "<group>"; };
 		E17B025431B99F1645669658 /* Pods-StudyWithMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyWithMe.debug.xcconfig"; path = "Target Support Files/Pods-StudyWithMe/Pods-StudyWithMe.debug.xcconfig"; sourceTree = "<group>"; };
+		F3042F56247C4B3A0008DB63 /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
 		F3193931247B5CDF003AD85A /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		F3193932247B5CDF003AD85A /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		F32AF911245BB61A00812F42 /* StudyWithMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyWithMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,14 @@
 				DF85A02F818B395846F58738 /* Pods-StudyWithMeTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F3042F55247C4B280008DB63 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				F3042F56247C4B3A0008DB63 /* UserSessionManager.swift */,
+			);
+			path = Session;
 			sourceTree = "<group>";
 		};
 		F319392F247B5CB6003AD85A /* Login Flow */ = {
@@ -232,6 +242,7 @@
 				F3DD683A2477812C0063D48C /* Constants */,
 				F3DD683F247781BA0063D48C /* Extensions */,
 				F3DD68422477827C0063D48C /* Miscellaneous */,
+				F3042F55247C4B280008DB63 /* Session */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -568,6 +579,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D03E8B24782AEC00DE91BD /* Constants+UserDefaults.swift in Sources */,
+				F3042F57247C4B3A0008DB63 /* UserSessionManager.swift in Sources */,
 				F3F34CC2247879AC009939DB /* Constants+Authentication.swift in Sources */,
 				F3DD6841247781C80063D48C /* UIAlertController+Convenience.swift in Sources */,
 				F3DD683E247781440063D48C /* Constants+Alert.swift in Sources */,

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseAuth
 
 class RegistrationViewController: BaseXibViewController, AuthenticationButtonDelegate {
 
@@ -78,8 +78,14 @@ class RegistrationViewController: BaseXibViewController, AuthenticationButtonDel
     // MARK: - Actions
     
     func authenticationButtonPressed() {
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-          
+        
+        guard let emailAddress = emailAddress, let password = confirmationPassword else {
+            // TODO: Text field validation to let user know they have not entered correct values
+            return
+        }
+        
+        Auth.auth().createUser(withEmail: emailAddress, password: password) { authResult, error in
+            
         }
     }
 }
