@@ -9,8 +9,14 @@ target 'StudyWithMe' do
   pod 'PureLayout'
   pod 'Reusable'
   pod 'SwiftyAttributes'
+  
+  #Firebase
   pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
   pod 'Firebase/Crashlytics'
+  
+  # Logging
+  pod 'CocoaLumberjack/Swift'
 
   target 'StudyWithMeTests' do
     inherit! :search_paths

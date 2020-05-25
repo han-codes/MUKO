@@ -1,5 +1,7 @@
 # Xcode
-build/
-xcuserdata/
-*.xccheckout
-*.pbxuser
+Projects/han-codes/StudyWithme/build/
+Projects/han-codes/StudyWithMe/xcuserdata/
+Projects/han-codes/StudyWithMe/.pbxuser
+
+# CocoaPods
+Projects/han-codes/StudyWithMe/Pods/

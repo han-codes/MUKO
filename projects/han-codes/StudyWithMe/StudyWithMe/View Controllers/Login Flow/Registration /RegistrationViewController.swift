@@ -7,14 +7,22 @@
 //
 
 import UIKit
+import Firebase
 
 class RegistrationViewController: BaseXibViewController, AuthenticationButtonDelegate {
 
     // MARK: - Outlets
     
+    @IBOutlet weak var emailAddressTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
+    
     // MARK: - Properties
     
     var authenticationContainerViewController: AuthenticationContainerViewController
+    var emailAddress: String?
+    var password: String?
+    var confirmationPassword: String?
     
     // MARK: - Initializer
     
@@ -37,12 +45,45 @@ class RegistrationViewController: BaseXibViewController, AuthenticationButtonDel
         
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
+        setUpLabels()
+    }
+    
+    private func setUpLabels() {
+        
+        emailAddressTextField.delegate = self
+        passwordTextField.delegate = self
+        confirmPasswordTextField.delegate = self
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        switch textField {
+            
+        case emailAddressTextField:
+            emailAddress = textField.text
+        case passwordTextField:
+            password = textField.text
+        case confirmPasswordTextField:
+            confirmationPassword = textField.text
+        default:
+            break
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        view.endEditing(true)
+        return true
     }
     
     // MARK: - Actions
     
     func authenticationButtonPressed() {
-        // TODO: Attempt to create a user
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+          
+        }
     }
+}
+
+extension RegistrationViewController: UITextFieldDelegate {
+    
 }
