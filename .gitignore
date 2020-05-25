@@ -1,7 +1,7 @@
 # Xcode
-Projects/han-codes/StudyWithme/build/
-Projects/han-codes/StudyWithMe/xcuserdata/
-Projects/han-codes/StudyWithMe/.pbxuser
+projects/han-codes/StudyWithme/build/
+projects/han-codes/StudyWithMe/StudyWithMe.xcworkspace/xcuserdata/
+projects/han-codes/StudyWithMe/.pbxuser
 
 # CocoaPods
-Projects/han-codes/StudyWithMe/Pods/
+projects/han-codes/StudyWithMe/Pods/
