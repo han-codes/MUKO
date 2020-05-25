@@ -72,6 +72,8 @@ class LoginViewController: BaseXibViewController {
         
         emailAddressTextField.delegate = self
         passwordTextField.delegate = self
+        
+        passwordTextField.isSecureTextEntry = true
     }
 }
 
