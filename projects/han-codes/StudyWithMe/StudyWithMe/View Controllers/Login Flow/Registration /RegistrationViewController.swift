@@ -75,8 +75,6 @@ class RegistrationViewController: BaseXibViewController, AuthenticationButtonDel
                 self.present(errorAlertController, animated: true, completion: nil)
             }
             
-            UserSessionManager.userID = emailAddress
-            
             let successAlertController = UIAlertController(withTitle: "Success!", message: "Successfully registered with \(emailAddress)") {
                 self.authenticationContainerViewController.currentState = .login
             }

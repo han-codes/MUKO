@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -17,7 +17,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="StudyWithMe" customModuleProvider="target">
             <connections>
+                <outlet property="emailAddressTextField" destination="0d0-co-cQ4" id="d1K-n1-3De"/>
                 <outlet property="invalidCredentialsLabel" destination="K9C-HY-aHJ" id="6K7-Oh-AO3"/>
+                <outlet property="passwordTextField" destination="LX5-52-efU" id="3F2-89-qfb"/>
                 <outlet property="view" destination="1EU-DZ-YFd" id="zmR-aU-S2I"/>
             </connections>
         </placeholder>
@@ -48,7 +50,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="s91-mL-BF2">
                             <rect key="frame" x="0.0" y="79.5" width="333" height="46"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0d0-co-cQ4" customClass="ECCTextField" customModule="StudyWithMe" customModuleProvider="target">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0d0-co-cQ4">
                                     <rect key="frame" x="0.0" y="0.0" width="333" height="46"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="46" id="FRz-p5-pKs"/>
@@ -67,7 +69,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XCN-h9-4MK">
                             <rect key="frame" x="0.0" y="137.5" width="333" height="243.5"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LX5-52-efU" customClass="ECCTextField" customModule="StudyWithMe" customModuleProvider="target">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LX5-52-efU">
                                     <rect key="frame" x="0.0" y="0.0" width="333" height="46"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="46" id="Z5b-Vq-3Sw"/>

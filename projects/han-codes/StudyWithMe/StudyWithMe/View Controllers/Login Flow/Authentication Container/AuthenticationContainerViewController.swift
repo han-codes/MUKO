@@ -128,9 +128,12 @@ class AuthenticationContainerViewController: BaseViewController, LogInDelegate {
     
     func loggedIn() {
         
-        // TODO: Save user that has logged in to keychain
-        // Display next screen
-        presentNotYetImplementedAlert()
+        UserDefaults.hasLoggedIn = true
+        
+        let testViewController = UIViewController()
+        testViewController.view.backgroundColor = .systemPink
+        
+        presentOverCurrentContext(testViewController, animated: true)
     }
     
     // MARK: - Keyboard
