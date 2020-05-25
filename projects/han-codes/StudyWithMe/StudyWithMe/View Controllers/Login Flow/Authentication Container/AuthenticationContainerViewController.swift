@@ -88,13 +88,13 @@ class AuthenticationContainerViewController: BaseViewController, LogInDelegate {
     }
     
     private func loadLogin() {
-        // TODO: - Login Screen Setup
+        
         transition(to: LoginViewController(authenticationContainerViewController: self))
     }
     
     private func loadSignUp() {
-        // TODO: - Sign Up Screen Setup
-        presentNotYetImplementedAlert()
+        
+        transition(to: RegistrationViewController(authenticationContainerViewController: self))
     }
     
     private func setUpSignInSignUpButton(for state: AuthenticationState) {

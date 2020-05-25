@@ -45,7 +45,7 @@ class LoginViewController: BaseXibViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+        view.backgroundColor = .systemPink
         setUpUI()
     }
     
