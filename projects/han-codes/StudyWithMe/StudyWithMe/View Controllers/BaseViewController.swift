@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 import PureLayout
+import MetovaBase
 
-class BaseViewController: UIViewController {
+class BaseViewController: MetovaBase.BaseViewController {
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         

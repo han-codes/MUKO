@@ -10,6 +10,7 @@ target 'StudyWithMe' do
   pod 'Reusable'
   pod 'SwiftyAttributes'
   pod 'KeychainAccess'
+  pod 'MetovaBase'
   
   #Firebase
   pod 'Firebase/Analytics'

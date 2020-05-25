@@ -53,7 +53,40 @@ class RegistrationViewController: BaseXibViewController, AuthenticationButtonDel
         emailAddressTextField.delegate = self
         passwordTextField.delegate = self
         confirmPasswordTextField.delegate = self
+        
+        passwordTextField.isSecureTextEntry = true
+        confirmPasswordTextField.isSecureTextEntry = true
     }
+    
+    // MARK: - Actions
+    
+    func authenticationButtonPressed() {
+        
+        guard let emailAddress = emailAddress, let password = confirmationPassword else {
+            // TODO: Text field validation to let user know they have not entered correct values
+            return
+        }
+        
+        Auth.auth().createUser(withEmail: emailAddress, password: password) { authResult, error in
+            
+            if let error = error {
+            
+                let errorAlertController = UIAlertController(withTitle: "Error", message: error.localizedDescription)
+                self.present(errorAlertController, animated: true, completion: nil)
+            }
+            
+            UserSessionManager.userID = emailAddress
+            
+            let successAlertController = UIAlertController(withTitle: "Success!", message: "Successfully registered with \(emailAddress)") {
+                self.authenticationContainerViewController.currentState = .login
+            }
+            
+            self.present(successAlertController, animated: true, completion: nil)
+        }
+    }
+}
+
+extension RegistrationViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         switch textField {
@@ -74,22 +107,4 @@ class RegistrationViewController: BaseXibViewController, AuthenticationButtonDel
         view.endEditing(true)
         return true
     }
-    
-    // MARK: - Actions
-    
-    func authenticationButtonPressed() {
-        
-        guard let emailAddress = emailAddress, let password = confirmationPassword else {
-            // TODO: Text field validation to let user know they have not entered correct values
-            return
-        }
-        
-        Auth.auth().createUser(withEmail: emailAddress, password: password) { authResult, error in
-            
-        }
-    }
-}
-
-extension RegistrationViewController: UITextFieldDelegate {
-    
 }

@@ -7,5 +7,28 @@
 //
 
 import Foundation
+import KeychainAccess
 
-//private let keychain =
+typealias UserID = String
+
+class UserSessionManager {
+ 
+    static var userID: UserID? {
+        
+        get {
+            return keychain[Keys.userID]
+        }
+        set {
+            keychain[Keys.userID] = newValue
+        }
+    }
+}
+
+// MARK: - Keychain Properties
+
+private let keychain = Keychain(service: "com.econocheck.eclub-service")
+
+private struct Keys {
+    
+    static let userID = "ID"
+}

@@ -132,6 +132,16 @@ class AuthenticationContainerViewController: BaseViewController, LogInDelegate {
         // Display next screen
         presentNotYetImplementedAlert()
     }
+    
+    // MARK: - Keyboard
+    
+    func keyboardWillChangeFrame(notification: Notification) {
+        
+        adjustContentInset(
+            scrollview: scrollView,
+            forKeyboardWillChangeFrameNotification: notification
+        )
+    }
 }
 
 extension AuthenticationContainerViewController {

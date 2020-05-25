@@ -20,7 +20,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationViewController" customModule="StudyWithMe" customModuleProvider="target">
             <connections>
-                <outlet property="confirmPasswordTextField" destination="la7-VR-rrY" id="tbS-bZ-gu3"/>
+                <outlet property="confirmPasswordTextField" destination="la7-VR-rrY" id="8g2-fU-jjE"/>
                 <outlet property="emailAddressTextField" destination="cU1-WI-Hcx" id="7CS-0B-Ck4"/>
                 <outlet property="passwordTextField" destination="9LM-IV-wEO" id="2cU-I8-DaN"/>
                 <outlet property="view" destination="ihS-Ns-cQo" id="i6w-tz-hnn"/>
@@ -44,8 +44,8 @@
                                     <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="To get stated enter your access code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ah8-F5-h3T">
-                                    <rect key="frame" x="17.5" y="30" width="298.5" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="To get stated enter an email and password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ah8-F5-h3T">
+                                    <rect key="frame" x="-5" y="30" width="343" height="21"/>
                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
                                     <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -60,8 +60,8 @@
                                 <constraint firstItem="Ah8-F5-h3T" firstAttribute="centerX" secondItem="z49-6Z-DAd" secondAttribute="centerX" id="tzt-2X-ETV"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="The email and/or password you have entered is invalid." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpT-h9-Uo0">
-                            <rect key="frame" x="0.0" y="72" width="333" height="13.5"/>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="The email and/or password you have entered is invalid." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpT-h9-Uo0">
+                            <rect key="frame" x="0.0" y="66" width="333" height="0.0"/>
                             <constraints>
                                 <constraint firstAttribute="height" priority="999" constant="13.5" id="fS6-u9-S1M"/>
                             </constraints>
@@ -70,7 +70,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="N0c-Dd-w0i">
-                            <rect key="frame" x="0.0" y="97.5" width="333" height="46"/>
+                            <rect key="frame" x="0.0" y="72" width="333" height="46"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cU1-WI-Hcx">
                                     <rect key="frame" x="0.0" y="0.0" width="333" height="46"/>
@@ -89,7 +89,7 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9NF-aZ-z12">
-                            <rect key="frame" x="0.0" y="155.5" width="333" height="46"/>
+                            <rect key="frame" x="0.0" y="130" width="333" height="46"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9LM-IV-wEO">
                                     <rect key="frame" x="0.0" y="0.0" width="333" height="46"/>
@@ -108,7 +108,7 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VrB-rE-q4t">
-                            <rect key="frame" x="0.0" y="213.5" width="333" height="167.5"/>
+                            <rect key="frame" x="0.0" y="188" width="333" height="193"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="la7-VR-rrY">
                                     <rect key="frame" x="0.0" y="0.0" width="333" height="46"/>
@@ -119,7 +119,7 @@
                                     <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdG-R2-SCK">
-                                    <rect key="frame" x="0.0" y="66" width="333" height="101.5"/>
+                                    <rect key="frame" x="0.0" y="66" width="333" height="127"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" priority="749" constant="30" id="GiA-bQ-4HB"/>
@@ -130,7 +130,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uyf-RW-2NI">
                             <rect key="frame" x="0.0" y="393" width="333" height="14"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKR-vF-3Pv">
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKR-vF-3Pv">
                                     <rect key="frame" x="234" y="0.0" width="99" height="14"/>
                                     <fontDescription key="fontDescription" name="SourceSansPro-It" family="Source Sans Pro" pointSize="12"/>
                                     <state key="normal" title="Forgot Password?">
