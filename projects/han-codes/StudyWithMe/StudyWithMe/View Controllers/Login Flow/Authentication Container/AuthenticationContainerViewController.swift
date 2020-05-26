@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CocoaLumberjack
 import SwiftyAttributes
 
 protocol AuthenticationDelegate: class {
@@ -127,6 +128,8 @@ class AuthenticationContainerViewController: BaseViewController, LogInDelegate {
     // MARK: - LogInDelegate Callback
     
     func loggedIn() {
+        
+        DDLogInfo("Login Successful 👍🏻")
         
         UserDefaults.hasLoggedIn = true
         

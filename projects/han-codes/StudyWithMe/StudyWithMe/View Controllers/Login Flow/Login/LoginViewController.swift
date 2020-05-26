@@ -108,6 +108,8 @@ extension LoginViewController: AuthenticationButtonDelegate {
     
     func authenticationButtonPressed() {
         
+        view.endEditing(true)
+        
         guard let email = emailAddress, let password = password else { return }
         
         GlobalProgressHUD.show()

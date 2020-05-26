@@ -45,18 +45,11 @@ class BaseTabBarController: UITabBarController, UITabBarControllerDelegate {
         
         tabBar.backgroundColor = .lightGray
         tabBar.tintColor = .blue
+        
+        selectedIndex = 1
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    // MARK: - Lifecycle
-    
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        
-        selectedIndex = 0
     }
 }
