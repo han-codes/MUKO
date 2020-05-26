@@ -20,6 +20,8 @@
 		F3042F6B247CA0F00008DB63 /* PomodoroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3042F69247CA0F00008DB63 /* PomodoroViewController.xib */; };
 		F3042F6F247CA12F0008DB63 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3042F6D247CA12F0008DB63 /* SettingsViewController.swift */; };
 		F3042F70247CA12F0008DB63 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3042F6E247CA12F0008DB63 /* SettingsViewController.xib */; };
+		F3042F76247CC08A0008DB63 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3042F74247CC08A0008DB63 /* TitleTableViewCell.swift */; };
+		F3042F77247CC08A0008DB63 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3042F75247CC08A0008DB63 /* TitleTableViewCell.xib */; };
 		F3193933247B5CDF003AD85A /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3193931247B5CDF003AD85A /* RegistrationViewController.swift */; };
 		F3193934247B5CE0003AD85A /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3193932247B5CDF003AD85A /* RegistrationViewController.xib */; };
 		F32AF915245BB61A00812F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32AF914245BB61A00812F42 /* AppDelegate.swift */; };
@@ -30,6 +32,7 @@
 		F32AF92F245BB61C00812F42 /* StudyWithMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32AF92E245BB61C00812F42 /* StudyWithMeTests.swift */; };
 		F32AF93A245BB61C00812F42 /* StudyWithMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32AF939245BB61C00812F42 /* StudyWithMeUITests.swift */; };
 		F32AF94F245BBFF800812F42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F32AF94E245BBFF800812F42 /* GoogleService-Info.plist */; };
+		F336AC87247DC2500040C4E5 /* TwoButtonsTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F336AC86247DC2500040C4E5 /* TwoButtonsTableViewHeaderView.swift */; };
 		F3D03E8924782A8B00DE91BD /* UserDefaults+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D03E8824782A8B00DE91BD /* UserDefaults+Convenience.swift */; };
 		F3D03E8B24782AEC00DE91BD /* Constants+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D03E8A24782AEC00DE91BD /* Constants+UserDefaults.swift */; };
 		F3DD683C247781350063D48C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD683B247781350063D48C /* Constants.swift */; };
@@ -81,6 +84,8 @@
 		F3042F69247CA0F00008DB63 /* PomodoroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PomodoroViewController.xib; sourceTree = "<group>"; };
 		F3042F6D247CA12F0008DB63 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F3042F6E247CA12F0008DB63 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		F3042F74247CC08A0008DB63 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		F3042F75247CC08A0008DB63 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		F3193931247B5CDF003AD85A /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		F3193932247B5CDF003AD85A /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		F32AF911245BB61A00812F42 /* StudyWithMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyWithMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +102,7 @@
 		F32AF939245BB61C00812F42 /* StudyWithMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyWithMeUITests.swift; sourceTree = "<group>"; };
 		F32AF93B245BB61C00812F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F32AF94E245BBFF800812F42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F336AC86247DC2500040C4E5 /* TwoButtonsTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonsTableViewHeaderView.swift; sourceTree = "<group>"; };
 		F3D03E8824782A8B00DE91BD /* UserDefaults+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Convenience.swift"; sourceTree = "<group>"; };
 		F3D03E8A24782AEC00DE91BD /* Constants+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+UserDefaults.swift"; sourceTree = "<group>"; };
 		F3DD683B247781350063D48C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -223,6 +229,32 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		F3042F71247CB8160008DB63 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F3042F72247CB83E0008DB63 /* Cells */,
+				F31A9A67247DA4E800546DD6 /* Table View Header */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		F3042F72247CB83E0008DB63 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F3042F73247CB8460008DB63 /* Table View Cells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F3042F73247CB8460008DB63 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F3042F74247CC08A0008DB63 /* TitleTableViewCell.swift */,
+				F3042F75247CC08A0008DB63 /* TitleTableViewCell.xib */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
 		F319392F247B5CB6003AD85A /* Login Flow */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +272,14 @@
 				F3193932247B5CDF003AD85A /* RegistrationViewController.xib */,
 			);
 			path = "Registration ";
+			sourceTree = "<group>";
+		};
+		F31A9A67247DA4E800546DD6 /* Table View Header */ = {
+			isa = PBXGroup;
+			children = (
+				F336AC86247DC2500040C4E5 /* TwoButtonsTableViewHeaderView.swift */,
+			);
+			path = "Table View Header";
 			sourceTree = "<group>";
 		};
 		F32AF908245BB61A00812F42 = {
@@ -307,12 +347,13 @@
 		F32AF948245BB6F900812F42 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				F3D03E8724782A7700DE91BD /* User Defaults */,
 				F3DD683A2477812C0063D48C /* Constants */,
 				F3DD683F247781BA0063D48C /* Extensions */,
 				F3DD68422477827C0063D48C /* Miscellaneous */,
 				F3042F64247C93650008DB63 /* Progress HUD */,
 				F3042F55247C4B280008DB63 /* Session */,
+				F3D03E8724782A7700DE91BD /* User Defaults */,
+				F3042F71247CB8160008DB63 /* User Interface */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -520,6 +561,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3042F77247CC08A0008DB63 /* TitleTableViewCell.xib in Resources */,
 				F3F34CC724787FC2009939DB /* LoginViewController.xib in Resources */,
 				F3042F70247CA12F0008DB63 /* SettingsViewController.xib in Resources */,
 				F3042F6B247CA0F00008DB63 /* PomodoroViewController.xib in Resources */,
@@ -670,12 +712,14 @@
 				F32AF915245BB61A00812F42 /* AppDelegate.swift in Sources */,
 				F3042F6A247CA0F00008DB63 /* PomodoroViewController.swift in Sources */,
 				F3042F6F247CA12F0008DB63 /* SettingsViewController.swift in Sources */,
+				F336AC87247DC2500040C4E5 /* TwoButtonsTableViewHeaderView.swift in Sources */,
 				F3DD68442477828C0063D48C /* GlobalTypeAlias.swift in Sources */,
 				F3193933247B5CDF003AD85A /* RegistrationViewController.swift in Sources */,
 				F32AF917245BB61A00812F42 /* SceneDelegate.swift in Sources */,
 				F3D03E8924782A8B00DE91BD /* UserDefaults+Convenience.swift in Sources */,
 				F3F34CC624787FC2009939DB /* LoginViewController.swift in Sources */,
 				F32AF91F245BB61A00812F42 /* StudyWithMe.xcdatamodeld in Sources */,
+				F3042F76247CC08A0008DB63 /* TitleTableViewCell.swift in Sources */,
 				F3F34CC9247880B5009939DB /* BaseXibViewController.swift in Sources */,
 				F3042F5A247C6CD50008DB63 /* UIViewController+Presentation.swift in Sources */,
 			);
