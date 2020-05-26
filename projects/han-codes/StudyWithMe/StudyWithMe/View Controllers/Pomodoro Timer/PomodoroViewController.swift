@@ -58,12 +58,9 @@ class PomodoroViewController: UIViewController {
         
         switch intervals[currentInterval] {
             
-//        case .study: seconds = 1500
-//        case .rest: seconds = 300
-//        case .longRest: seconds = 1200
-            case .study: seconds = 3
-            case .rest: seconds = 5
-            case .longRest: seconds = 8
+        case .study: seconds = 1500
+        case .rest: seconds = 300
+        case .longRest: seconds = 1200
         }
         
         timerLabel.text = timeString(timeInterval: TimeInterval(seconds))

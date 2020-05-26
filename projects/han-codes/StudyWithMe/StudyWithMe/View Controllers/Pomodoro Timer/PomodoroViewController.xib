@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PomodoroViewController" customModule="StudyWithMe" customModuleProvider="target">
             <connections>
+                <outlet property="playPauseButton" destination="VjG-IN-SeJ" id="1cg-zL-JrD"/>
                 <outlet property="studyGroupButton" destination="CFP-OL-bMB" id="mue-eb-Gef"/>
                 <outlet property="timerLabel" destination="sKy-G0-1PV" id="9gh-NX-7SF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
