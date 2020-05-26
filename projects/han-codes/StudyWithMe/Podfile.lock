@@ -88,6 +88,7 @@ PODS:
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.4.0)
   - KeychainAccess (4.2.0)
+  - MBProgressHUD (1.2.0)
   - MetovaBase (2.0.0)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
@@ -109,6 +110,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Crashlytics
   - KeychainAccess
+  - MBProgressHUD
   - MetovaBase
   - PureLayout
   - Reusable
@@ -133,6 +135,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - KeychainAccess
+    - MBProgressHUD
     - MetovaBase
     - nanopb
     - PromisesObjC
@@ -158,6 +161,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   KeychainAccess: 3f760109aa99b05d0f231e28b22642da7153e38a
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MetovaBase: 71a3b14fb1a8373dd72bbcbb1b0425f9c9dd3be1
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
@@ -165,6 +169,6 @@ SPEC CHECKSUMS:
   Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
   SwiftyAttributes: e3e13891ddac3c62b3d7798d5c3969cea88e62bb
 
-PODFILE CHECKSUM: 4286e61743b2716250a0063b8b31d652b518c209
+PODFILE CHECKSUM: e201186f808831938a6cda1db6c28d606cc76987
 
 COCOAPODS: 1.9.0

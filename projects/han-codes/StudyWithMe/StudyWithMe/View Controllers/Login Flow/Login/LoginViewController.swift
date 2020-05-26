@@ -110,7 +110,11 @@ extension LoginViewController: AuthenticationButtonDelegate {
         
         guard let email = emailAddress, let password = password else { return }
         
+        GlobalProgressHUD.show()
+        
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            
+            defer { GlobalProgressHUD.hide() }
             
             guard let strongSelf = self else { return }
             

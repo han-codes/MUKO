@@ -11,6 +11,7 @@ target 'StudyWithMe' do
   pod 'SwiftyAttributes'
   pod 'KeychainAccess'
   pod 'MetovaBase'
+  pod 'MBProgressHUD'
   
   #Firebase
   pod 'Firebase/Analytics'

@@ -12,6 +12,14 @@
 		78AA7CF52A2DE966C6BBD965 /* Pods_StudyWithMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9BB0975DD9DA088291219 /* Pods_StudyWithMe.framework */; };
 		F3042F57247C4B3A0008DB63 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3042F56247C4B3A0008DB63 /* UserSessionManager.swift */; };
 		F3042F5A247C6CD50008DB63 /* UIViewController+Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3042F59247C6CD50008DB63 /* UIViewController+Presentation.swift */; };
+		F3042F5D247C8D880008DB63 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3042F5C247C8D880008DB63 /* BaseTabBarController.swift */; };
+		F3042F61247C90A80008DB63 /* ManageGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3042F5F247C90A80008DB63 /* ManageGroupsViewController.swift */; };
+		F3042F62247C90A80008DB63 /* ManageGroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3042F60247C90A80008DB63 /* ManageGroupsViewController.xib */; };
+		F3042F66247C937E0008DB63 /* GlobalProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3042F65247C937E0008DB63 /* GlobalProgressHUD.swift */; };
+		F3042F6A247CA0F00008DB63 /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3042F68247CA0F00008DB63 /* PomodoroViewController.swift */; };
+		F3042F6B247CA0F00008DB63 /* PomodoroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3042F69247CA0F00008DB63 /* PomodoroViewController.xib */; };
+		F3042F6F247CA12F0008DB63 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3042F6D247CA12F0008DB63 /* SettingsViewController.swift */; };
+		F3042F70247CA12F0008DB63 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3042F6E247CA12F0008DB63 /* SettingsViewController.xib */; };
 		F3193933247B5CDF003AD85A /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3193931247B5CDF003AD85A /* RegistrationViewController.swift */; };
 		F3193934247B5CE0003AD85A /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3193932247B5CDF003AD85A /* RegistrationViewController.xib */; };
 		F32AF915245BB61A00812F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32AF914245BB61A00812F42 /* AppDelegate.swift */; };
@@ -65,6 +73,14 @@
 		E17B025431B99F1645669658 /* Pods-StudyWithMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyWithMe.debug.xcconfig"; path = "Target Support Files/Pods-StudyWithMe/Pods-StudyWithMe.debug.xcconfig"; sourceTree = "<group>"; };
 		F3042F56247C4B3A0008DB63 /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
 		F3042F59247C6CD50008DB63 /* UIViewController+Presentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presentation.swift"; sourceTree = "<group>"; };
+		F3042F5C247C8D880008DB63 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		F3042F5F247C90A80008DB63 /* ManageGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageGroupsViewController.swift; sourceTree = "<group>"; };
+		F3042F60247C90A80008DB63 /* ManageGroupsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManageGroupsViewController.xib; sourceTree = "<group>"; };
+		F3042F65247C937E0008DB63 /* GlobalProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalProgressHUD.swift; sourceTree = "<group>"; };
+		F3042F68247CA0F00008DB63 /* PomodoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewController.swift; sourceTree = "<group>"; };
+		F3042F69247CA0F00008DB63 /* PomodoroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PomodoroViewController.xib; sourceTree = "<group>"; };
+		F3042F6D247CA12F0008DB63 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F3042F6E247CA12F0008DB63 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		F3193931247B5CDF003AD85A /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		F3193932247B5CDF003AD85A /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		F32AF911245BB61A00812F42 /* StudyWithMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyWithMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,11 +180,47 @@
 			path = "View Controller";
 			sourceTree = "<group>";
 		};
-		F3042F5B247C6D2F0008DB63 /* Navigation */ = {
+		F3042F5B247C6D2F0008DB63 /* Tab Bar  */ = {
 			isa = PBXGroup;
 			children = (
+				F3042F5C247C8D880008DB63 /* BaseTabBarController.swift */,
 			);
-			path = Navigation;
+			path = "Tab Bar ";
+			sourceTree = "<group>";
+		};
+		F3042F5E247C908C0008DB63 /* Manage Groups */ = {
+			isa = PBXGroup;
+			children = (
+				F3042F5F247C90A80008DB63 /* ManageGroupsViewController.swift */,
+				F3042F60247C90A80008DB63 /* ManageGroupsViewController.xib */,
+			);
+			path = "Manage Groups";
+			sourceTree = "<group>";
+		};
+		F3042F64247C93650008DB63 /* Progress HUD */ = {
+			isa = PBXGroup;
+			children = (
+				F3042F65247C937E0008DB63 /* GlobalProgressHUD.swift */,
+			);
+			path = "Progress HUD";
+			sourceTree = "<group>";
+		};
+		F3042F67247CA0DF0008DB63 /* Pomodoro Timer */ = {
+			isa = PBXGroup;
+			children = (
+				F3042F68247CA0F00008DB63 /* PomodoroViewController.swift */,
+				F3042F69247CA0F00008DB63 /* PomodoroViewController.xib */,
+			);
+			path = "Pomodoro Timer";
+			sourceTree = "<group>";
+		};
+		F3042F6C247CA11C0008DB63 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F3042F6D247CA12F0008DB63 /* SettingsViewController.swift */,
+				F3042F6E247CA12F0008DB63 /* SettingsViewController.xib */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		F319392F247B5CB6003AD85A /* Login Flow */ = {
@@ -259,6 +311,7 @@
 				F3DD683A2477812C0063D48C /* Constants */,
 				F3DD683F247781BA0063D48C /* Extensions */,
 				F3DD68422477827C0063D48C /* Miscellaneous */,
+				F3042F64247C93650008DB63 /* Progress HUD */,
 				F3042F55247C4B280008DB63 /* Session */,
 			);
 			path = Utility;
@@ -275,7 +328,10 @@
 		F32AF94B245BB71100812F42 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F3042F5B247C6D2F0008DB63 /* Navigation */,
+				F3042F6C247CA11C0008DB63 /* Settings */,
+				F3042F67247CA0DF0008DB63 /* Pomodoro Timer */,
+				F3042F5E247C908C0008DB63 /* Manage Groups */,
+				F3042F5B247C6D2F0008DB63 /* Tab Bar  */,
 				F319392F247B5CB6003AD85A /* Login Flow */,
 				F3DD6849247784680063D48C /* BaseViewController.swift */,
 				F3F34CC8247880B5009939DB /* BaseXibViewController.swift */,
@@ -465,7 +521,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F34CC724787FC2009939DB /* LoginViewController.xib in Resources */,
+				F3042F70247CA12F0008DB63 /* SettingsViewController.xib in Resources */,
+				F3042F6B247CA0F00008DB63 /* PomodoroViewController.xib in Resources */,
 				F3DD6848247783480063D48C /* AuthenticationContainerViewController.xib in Resources */,
+				F3042F62247C90A80008DB63 /* ManageGroupsViewController.xib in Resources */,
 				F32AF924245BB61C00812F42 /* LaunchScreen.storyboard in Resources */,
 				F3193934247B5CE0003AD85A /* RegistrationViewController.xib in Resources */,
 				F32AF94F245BBFF800812F42 /* GoogleService-Info.plist in Resources */,
@@ -598,7 +657,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D03E8B24782AEC00DE91BD /* Constants+UserDefaults.swift in Sources */,
+				F3042F66247C937E0008DB63 /* GlobalProgressHUD.swift in Sources */,
 				F3042F57247C4B3A0008DB63 /* UserSessionManager.swift in Sources */,
+				F3042F61247C90A80008DB63 /* ManageGroupsViewController.swift in Sources */,
+				F3042F5D247C8D880008DB63 /* BaseTabBarController.swift in Sources */,
 				F3F34CC2247879AC009939DB /* Constants+Authentication.swift in Sources */,
 				F3DD6841247781C80063D48C /* UIAlertController+Convenience.swift in Sources */,
 				F3DD683E247781440063D48C /* Constants+Alert.swift in Sources */,
@@ -606,6 +668,8 @@
 				F3DD6847247783480063D48C /* AuthenticationContainerViewController.swift in Sources */,
 				F3DD684A247784680063D48C /* BaseViewController.swift in Sources */,
 				F32AF915245BB61A00812F42 /* AppDelegate.swift in Sources */,
+				F3042F6A247CA0F00008DB63 /* PomodoroViewController.swift in Sources */,
+				F3042F6F247CA12F0008DB63 /* SettingsViewController.swift in Sources */,
 				F3DD68442477828C0063D48C /* GlobalTypeAlias.swift in Sources */,
 				F3193933247B5CDF003AD85A /* RegistrationViewController.swift in Sources */,
 				F32AF917245BB61A00812F42 /* SceneDelegate.swift in Sources */,

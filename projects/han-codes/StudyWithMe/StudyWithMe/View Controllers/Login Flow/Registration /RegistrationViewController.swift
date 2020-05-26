@@ -67,7 +67,11 @@ class RegistrationViewController: BaseXibViewController, AuthenticationButtonDel
             return
         }
         
+        GlobalProgressHUD.show()
+        
         Auth.auth().createUser(withEmail: emailAddress, password: password) { authResult, error in
+            
+            defer { GlobalProgressHUD.hide() }
             
             if let error = error {
             

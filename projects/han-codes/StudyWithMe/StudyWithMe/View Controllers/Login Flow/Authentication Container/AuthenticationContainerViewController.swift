@@ -130,10 +130,8 @@ class AuthenticationContainerViewController: BaseViewController, LogInDelegate {
         
         UserDefaults.hasLoggedIn = true
         
-        let testViewController = UIViewController()
-        testViewController.view.backgroundColor = .systemPink
-        
-        presentOverCurrentContext(testViewController, animated: true)
+        let baseTabBarController = BaseTabBarController()
+        presentOverCurrentContext(baseTabBarController, animated: true)
     }
     
     // MARK: - Keyboard
